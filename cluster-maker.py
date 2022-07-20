@@ -74,8 +74,7 @@ def make_clusters(l):
 
 
 def write_clusters(clusters, month, year):
-    #with open(f'/home/nellter/PyCharm/PycharmProjects/IC_projeto/graph/{year}/tx_{year}', 'w') as file:
-    with open(f'/home/azureuser/graph/2019/tx_{year}', 'w') as file:
+    with open(f'/path/to/save/{year}/tx_{year}', 'w') as file:
         for cluster in clusters:
             if len(cluster.add_out) > 0:
                 file.write(f'{cluster.add_in}:{cluster.add_out}\n')
