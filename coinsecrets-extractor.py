@@ -61,7 +61,7 @@ def insert_transaction_unknowable(transaction_id, script, hex_t, ascii_t):
 def save(block_height, protocol_status, transactions, year):
     if len(transactions) != 0:
         try:
-            with open('/home/nellterugrin/transactions/' + year +
+            with open('path/to/save' + year +
                       '_transactions/block_' + str(block_height) + '_' + protocol_status, 'w') as file:
                 for transaction in transactions:
                     script = transactions[transaction]['script']
