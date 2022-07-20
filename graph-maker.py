@@ -59,8 +59,7 @@ def insert_add_output(addresses_output):
 def read_clusters(month, year):
     count = 0
     try:
-        #with open(f'/home/nellter/PyCharm/PycharmProjects/IC_projeto/{year}/tx_{year}', 'r') as file:
-        with open(f'/home/azureuser/graph/2019/tx_{year}', 'r') as file:
+        with open(f'/file/with/clusters/tx_{year}', 'r') as file:
             clusters = file.read()
             clusters = clusters.split('\n')
             for cluster in clusters:
